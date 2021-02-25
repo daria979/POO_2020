@@ -17,6 +17,13 @@ namespace _01_25_feb
             World w2 = new World(2);
             w2.SayHello();
 
+
+            for (int i = 0; i < 100; i++)
+            {
+                new World(new Random().Next(0, 1000));
+            }
+
+            Console.WriteLine($"Am creat {World.Counter} obiecte de tip World");
         }
     }
 }
